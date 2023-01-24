@@ -61,7 +61,7 @@ export default {
         // console.log("validate");
       console.warn(this.rollNo);
       let result = await axios.patch(
-        `http://localhost:4000/certs/${this.rollNo}`,
+        `https://student-certificate-server.onrender.com/certs/${this.rollNo}`,
         {
           name: this.name,
           course: this.course,
