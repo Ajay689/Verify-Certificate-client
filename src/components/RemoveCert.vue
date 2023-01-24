@@ -43,7 +43,7 @@ export default {
       if(!this.v$.$error){
         console.log("validate");
       let result = await axios.delete(
-        `http://localhost:4000/certs/${this.rollNo}`
+        `https://student-certificate-server.onrender.com/certs/${this.rollNo}`
       );
       if (result.status == 200) {
         alert("Certificate Deleted");
