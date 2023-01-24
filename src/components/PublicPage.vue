@@ -62,7 +62,7 @@ export default {
       if(!this.v$.$error){
         console.log("validate");
       let result = await axios.get(
-        `http://localhost:4000/certs/${this.certId}`
+        `https://student-certificate-server.onrender.com/certs/${this.certId}`
         // `https://evening-inlet-19531.herokuapp.com/certs/${this.certId}`
       );
         // console.log("hii");
