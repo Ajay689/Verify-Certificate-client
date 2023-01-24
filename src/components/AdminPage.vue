@@ -49,7 +49,7 @@ export default {
       if(!this.v$.$error){
         console.log("before");
        let result = await axios.post(
-         `http://localhost:4000/users/login`,{email:this.email,password:this.password}
+         `https://student-certificate-server.onrender.com/users/login`,{email:this.email,password:this.password}
         );
        if (result.status == 200) {
          localStorage.setItem("user-info", JSON.stringify(result.data[0]));
