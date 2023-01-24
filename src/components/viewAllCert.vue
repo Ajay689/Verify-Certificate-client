@@ -42,7 +42,7 @@ export default {
   },
   async mounted() {
     let result = await axios.get(
-    "http://localhost:4000/certs/"
+    "https://student-certificate-server.onrender.com/certs/"
       //  "https://evening-inlet-19531.herokuapp.com/certs/"
     );
     this.list = result.data.users;
