@@ -62,7 +62,7 @@ export default {
       this.v$.$validate();
       if(!this.v$.$error){
         console.log("validate");
-        let result = await axios.post("http://localhost:4000/certs/", 
+        let result = await axios.post("https://student-certificate-server.onrender.com/certs/", 
         {
           name: this.name,
           course: this.course,
